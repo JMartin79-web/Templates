@@ -1,0 +1,31 @@
+.hero-container{
+    @include container;
+    background-color: $secondary;
+    .hero{
+        @include div-width;
+        @include d-flex-center;
+        @include padding50;
+        justify-content: space-between;
+        height: 80vh;
+        padding-top: 80px;
+
+        .hero-img{
+            background-color: $primary;
+            width: 100%;
+            max-width: 500px;
+            aspect-ratio: 1/1;
+        }
+    }
+}
+
+
+
+// TABLET
+@media screen and (max-width: 768px){
+    
+}
+
+// MOBILE
+@media screen and (max-width: 360px) {
+
+}

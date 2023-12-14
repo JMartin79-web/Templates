@@ -1,0 +1,30 @@
+.footer-container{
+    width: 100vw;
+    position: relative;
+    bottom: 0;
+    background-color: $black;
+    .footer{
+        @include div-width;
+        @include padding50;
+        div{@include vertical-margin15;}
+        h6{color: $colorBg;}
+
+    }
+}
+
+// TABLET
+@media screen and (max-width: 768px){
+.footer-container{
+    .footer{@include padding25;}
+}  
+
+}
+
+    
+// MOBILE
+@media screen and (max-width: 360px) {
+.footer-container{
+    .footer{@include padding15;}
+}  
+
+}
