@@ -1,4 +1,6 @@
 import React from 'react'
+import SecondaryButton from '../Buttons/SecondaryButton'
+import PrimaryButton from '../Buttons/PrimaryButton'
 
 function Hero() {
 return (
@@ -9,6 +11,13 @@ return (
 
         <section className='hero-txt'>
             <h1>Hero text</h1>
+            <p>Texto de ejemplo</p>
+            
+            <div className='hero-txt-buttons'>
+                <SecondaryButton txt="Secondary Button" />
+                <PrimaryButton txt="Primary Button"/>
+            </div>
+        
         </section>
 
         <section className='hero-img'>

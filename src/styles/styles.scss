@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+    overflow-x: hidden;
 }
 
 html{ font-size: 62.5% /* para que 1rem sean 10px */}
@@ -20,6 +20,11 @@ html{ font-size: 62.5% /* para que 1rem sean 10px */}
 // GENERAL
 @import './general.scss';
 
+// ANIMACIONES
+@import './animations.scss';
+
+// BUTTON
+@import './components/Button.scss';
 
 // HEADER
 @import './components/Header.scss';
@@ -27,6 +32,18 @@ html{ font-size: 62.5% /* para que 1rem sean 10px */}
 
 // HERO
 @import './components/Hero.scss';
+
+// ABOUT
+@import './components/About.scss';
+    @import './components/Card.scss';
+
+
+
+// SECTIONS
+
+
+// SECTION 2
+@import './components/Section2.scss';
 
 // FOOTER
 @import './components/Footer.scss';

@@ -1,0 +1,17 @@
+.card{
+    @include margin10;
+    aspect-ratio: 3/4;
+    width: 100%;
+    max-width: 300px;
+    background-color: $secondary;
+    .card-img{
+        aspect-ratio: 1/1;
+        background-color: $colorBg;
+        @include margin15;
+    }
+
+    .card-txt{
+        @include margin15;
+
+    }
+}

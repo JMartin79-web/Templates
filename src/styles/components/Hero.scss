@@ -1,18 +1,16 @@
 .hero-container{
     @include container;
-    background-color: $secondary;
     .hero{
         @include div-width;
-        @include d-flex-center;
-        @include padding50;
-        justify-content: space-between;
+        @include div-2col;
+        align-items: center;
         height: 80vh;
         padding-top: 80px;
 
         .hero-img{
-            background-color: $primary;
+            background-color: $secondary;
             width: 100%;
-            max-width: 500px;
+            max-width: 700px;
             aspect-ratio: 1/1;
         }
     }
@@ -22,7 +20,13 @@
 
 // TABLET
 @media screen and (max-width: 768px){
-    
+.hero-container{
+
+    .hero{
+        @include d-column-reverse;
+        height: fit-content;
+    }
+}
 }
 
 // MOBILE

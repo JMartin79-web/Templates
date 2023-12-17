@@ -1,12 +1,13 @@
 .hamburger-container{
     @include disable-selection;
-    
     cursor: pointer;
     z-index: 100;
+    
 
     .hamburger-btn{
         height: 30px;
         width: 40px;
+        overflow-x: visible;
         @include d-column-center;
         &:hover{
             span{

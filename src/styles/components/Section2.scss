@@ -1,0 +1,43 @@
+.section2-container{
+    @include container;
+    .section2{
+        @include div-width;
+        @include div-2col;
+
+        .section2-txt{
+            @include padding10;
+        }
+        
+        .section2-img{
+            @include padding10;
+            background-color: $secondary;
+        }
+
+    }
+}
+
+// TABLET
+@media screen and (max-width: 768px){
+    .section2-container{
+        .section2{
+            @include d-column;
+    
+            .section2-txt{
+                @include padding10;
+            }
+            
+            .section2-img{
+                @include padding10;
+                background-color: $secondary;
+            }
+    
+        }
+    }
+    
+}
+    
+// MOBILE
+@media screen and (max-width: 360px) {
+    
+    
+}

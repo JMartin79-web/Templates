@@ -1,5 +1,5 @@
 
-// MIXIN
+// MIXIN DE DIFERENTES FLEX DIRECTIOS
 @mixin d-flex-center {
     display: flex;
     justify-content: center;
@@ -10,6 +10,12 @@
     display: flex;
     flex-direction: column;
 }
+
+@mixin d-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 @mixin d-column-center {
     display: flex;
     flex-direction: column;
@@ -23,7 +29,7 @@
     align-items: center;
 }
 
-// contenedor div
+// CONTENEDORES DE DIV Y SECCION
 
 @mixin container {
     width: 100vw;
@@ -31,15 +37,27 @@
 }
 
 @mixin div-width {
+    margin: auto;
     width: 100%;
     max-width: 1200px;
-    margin: auto;
+    @include padding50;
+    
+    // TABLET
+    @media screen and (max-width: 768px){ @include padding25; }
+    // MOBILE
+    @media screen and (max-width: 360px){ @include padding15; }
 }
 
 @mixin div-2col {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    @include padding50;
+    
+    // TABLET
+    @media screen and (max-width: 768px){ @include padding25; }
+    // MOBILE
+    @media screen and (max-width: 360px){ @include padding15; }
 }
 
 

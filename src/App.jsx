@@ -2,14 +2,22 @@ import { useState } from 'react'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Hero from './components/Hero/Hero'
+import About from './components/About/About'
+import Section2 from './components/Sections/Section2'
 
 function App() {
 
   return (
     <>
       <Header/>
+      
       <Hero/>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet qui ea iste, quaerat reiciendis magnam sint minus deleniti obcaecati laboriosam labore praesentium, quibusdam et enim in necessitatibus temporibus maiores exercitationem.</p>
+      
+      <About/>
+
+
+      <Section2/>
+
 
       <Footer/>
     </>

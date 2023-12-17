@@ -1,0 +1,10 @@
+.about-container{
+    @include container;
+    .about{
+        @include div-width;
+        .about-content{
+            @include d-flex-center;
+            justify-content: space-between;
+        }
+    }
+}
