@@ -10,7 +10,8 @@ return (
     <div className='hero'>
 
         <section className='hero-txt'>
-            <h1>Hero text</h1>
+            <h1>Hero title</h1>
+
             <p>Texto de ejemplo</p>
             
             <div className='hero-txt-buttons'>

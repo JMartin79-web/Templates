@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 
 // img
@@ -22,10 +23,7 @@ return (
       </div>
       
       <div className='header-links'>
-        <p className='link'>link 1</p>
-        <p className='link'>link 2</p>
-        <p className='link'>link 3</p>
-
+        <HashLink to='/'/>
       </div>
     
       <div className='header-hamburger'>
@@ -49,8 +47,7 @@ return (
    
     <div className='dashboard'>
 
-      <div className='dashboard-back'>
-      </div>
+
 
       <div className='dashboard-content'>
        

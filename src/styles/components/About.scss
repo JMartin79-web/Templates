@@ -3,7 +3,8 @@
     .about{
         @include div-width;
         .about-content{
-            @include d-flex-center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             justify-content: space-between;
         }
     }

@@ -4,7 +4,7 @@
         @include div-width;
         @include div-2col;
         align-items: center;
-        height: 80vh;
+        min-height: 80vh;
         padding-top: 80px;
 
         .hero-img{

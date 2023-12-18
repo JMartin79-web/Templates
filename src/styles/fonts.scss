@@ -15,24 +15,37 @@ $extraBold : 800;
 // ENCABEZADOS
 @mixin heading1 {
     color: $colorH;
-    font-size: 7.7rem;
+    font-size: 7rem;
     font-family: 'Poppins', sans-serif;
     // TABLET
-    @media screen and (max-width: 768px){ }
+    @media screen and (max-width: 768px){ font-size: 6.5rem; }
     // MOBILE
-    @media screen and (max-width: 360px) { }
+    @media screen and (max-width: 500px) { font-size: 6rem;}
+    @media screen and (max-width: 400px) { font-size: 4.5rem;}
+
 }
 
 @mixin heading2 {
     color: $colorH;
     font-size: 5.9rem;
     font-family: 'Poppins', sans-serif;
+    // TABLET
+    @media screen and (max-width: 768px){ font-size: 5.3rem; }
+    // MOBILE
+    @media screen and (max-width: 400px) { font-size: 5rem;}
+    @media screen and (max-width: 360px) { font-size: 4rem; }
+
 }
 
 @mixin heading3 {
     color: $colorH;
     font-size: 4.5rem;
     font-family: 'Poppins', sans-serif;
+    // TABLET
+    @media screen and (max-width: 768px){ font-size: 4rem; }
+    // MOBILE
+    @media screen and (max-width: 360px) { font-size: 3.8rem; }
+    @media screen and (max-width: 400px) { font-size: 3.5rem;}
 }
 
 @mixin heading4 {

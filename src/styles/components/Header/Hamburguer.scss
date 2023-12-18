@@ -3,12 +3,12 @@
     cursor: pointer;
     z-index: 100;
     
-
     .hamburger-btn{
         height: 30px;
         width: 40px;
         overflow-x: visible;
         @include d-column-center;
+        
         &:hover{
             span{
                 background-color: $accent;
@@ -43,7 +43,6 @@
         height: 30px;
         width: 35px;
         @include d-column-center;
-
         
         span{
             width: 40px;
