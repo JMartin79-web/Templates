@@ -15,19 +15,19 @@ return (
 
         <div className='contact-info'>
             <div>
-                <h3>¡Nos encanta Villa Urquiza!</h3>
-                <p>Estamos ubicados en Dr. Pedro Ignacio Rivera 4946, General Urquiza.</p>
-                <p>También nos podés encontrar en redes</p>
-                
-                <SocialButton href='https://www.facebook.com/meencantamidentista1' txt='Facebook' img={<IconFacebook/>} />
-                <SocialButton href='https://www.instagram.com/meencantamidentista/?hl=es-la' txt='Instagram' img={<IconInstagram/>} />
+                <h3>Contact</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum quia nostrum officiis, illum, quos consequatur quo est repudiandae!</p>
+                <p>Numquam officia quis assumenda placeat sunt praesentium animi ratione dolor omnis velit</p>
             </div>
 
             <DivisorIntern color='#6CC1C6' />
 
             <div>
-                <h5>Solicitá un turno llamando al 4522-5265</h5>
-                <p>Estamos disponibles Lunes a Viernes de 09:00 a 18:00</p>
+                <h5>Title h5</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+
+                <SocialButton href='#' txt='Facebook' img={<IconFacebook/>} />
+                <SocialButton href='#' txt='Instagram' img={<IconInstagram/>} />
             </div>
 
         </div>

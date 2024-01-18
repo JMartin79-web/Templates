@@ -7,7 +7,6 @@
         align-items: center;
         .section2-txt{
             @include padding10;
-            h3{color: $primary;}
         }
         
         .section2-img{

@@ -19,7 +19,7 @@ return (
 
       <div className='header-logo'>
         <img src='#' alt="logo" />
-        <HashLink smooth to='/#inicio' >Me encanta mi dentista</HashLink>
+        <HashLink smooth to='/#inicio' >L O G O</HashLink>
       </div>
       
       <div className='header-links'>
@@ -52,9 +52,9 @@ return (
 
     <div className='dashboard-content'>
         <div className='dashboard-links'>
-              <HashLink className='link' onClick={handleToggle} smooth to="/#inicio">Link</HashLink>
-              <HashLink className='link' onClick={handleToggle} smooth to="/#nosotros">Link</HashLink>
-              <HashLink className='link' onClick={handleToggle} smooth to="/#contacto">Link</HashLink >
+              <HashLink className='link' onClick={handleToggle} smooth to="/#">Link</HashLink>
+              <HashLink className='link' onClick={handleToggle} smooth to="/#">Link</HashLink>
+              <HashLink className='link' onClick={handleToggle} smooth to="/#">Link</HashLink >
           </div>
         
           <div className='dashboard-divisor'></div>

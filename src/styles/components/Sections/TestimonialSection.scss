@@ -3,11 +3,9 @@
 
     .testimonial-section{
         @include div-width;
-        h3{
-            text-align: center;
-            color: $accent;
-        }
+
         .testimonial-section-cards{
+            @include vertical-margin15;
             display: flex;
             justify-content: space-evenly;
             align-items: center;

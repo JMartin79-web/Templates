@@ -11,6 +11,8 @@ import img4 from '../../assets/img/img4.jpg'
 
 function Carrousel(props) {
 
+  // HAY QUE ACTUALIZARLO PARA QUE EL ARRAY VENGA DE PROPS. PORQUE SINO NO ES REUTILIZABLE
+  
   let sliderImgsArray = [
     {id: 1, key:"1", name:'img1', src:img1 },
     {id: 2, key:"2", name:'img2', src:img2 },
