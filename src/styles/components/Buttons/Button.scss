@@ -1,5 +1,4 @@
 
-
 .button-contenedor{
     width: fit-content;
     display: inline-flex;
@@ -65,4 +64,60 @@
         transform: translateY(0rem);
         filter: drop-shadow(transparent 0px 0rem 0rem);
     }
+}
+
+
+.social-button{
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 1rem 1rem;
+    margin: .5rem;
+    border-radius: 1rem;
+    border: .3rem solid $primary;
+    @include animation-transition;
+
+    .social-button-img{
+        aspect-ratio: 1/1;
+        margin-right:.5rem;
+        width: 2rem;
+        height: 2rem;
+        .svg-icon{
+            @include d-flex-center;
+            width: 2rem;
+            height: 2rem;
+            path{width: 1rem;}
+            fill: $primary;
+            @include animation-transition;
+        }
+    }
+
+    .social-button-txt{
+        p{
+            color: $primary;
+            font-weight: $semiBold;
+            @include animation-transition;
+        }
+    }
+
+    &:hover{
+        @include animation-transition-fast;
+        border: .3rem solid $accent;
+        .social-button-img{
+            .svg-icon{
+                @include animation-transition-fast;
+                fill: $accent;
+            }
+        }
+        .social-button-txt{
+            p{
+                color: $accent;
+                font-weight: $semiBold;
+                @include animation-transition-fast;
+            }
+        }
+    }
+
 }

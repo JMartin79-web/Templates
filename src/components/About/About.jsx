@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from './Card'
+import CardSquare from '../Cards/CardSquare'
 
 function About() {
 return (
@@ -10,18 +10,15 @@ return (
     
       <div className='about-content'>
       
-        <Card
-          title="Card 1"
+        <CardSquare
           txt='texto de ejemplo'  
         />
 
-        <Card
-          title="Card 2"
+        <CardSquare
           txt='texto de ejemplo'  
         />
 
-        <Card
-          title="Card 3"
+        <CardSquare
           txt='texto de ejemplo'  
         />
       

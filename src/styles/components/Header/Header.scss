@@ -17,7 +17,24 @@
         justify-content: space-between;
         
         .header-logo{
+            display: flex;
+            align-items: center;
             @include disable-selection;
+            overflow-y: hidden;
+            img{
+                height: 4rem;
+                aspect-ratio: 1/1;
+                margin-right: .5rem;
+            }
+            a{
+                @include heading6;
+                font-weight: $semiBold;
+                @include animation-transition;
+                &:hover{
+                    color: $accent;
+                    @include animation-transition-fast;
+                }
+            }
             
         }
 
@@ -25,7 +42,15 @@
             display: flex;
             .link{
                 @include disable-selection;
+                @include heading6;
+                font-weight: $semiBold;
+
                 margin-left: 15px;
+                
+                &:hover{
+                    color: $accent;
+                    @include animation-transition-fast;
+                }
             }
         }
 

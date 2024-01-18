@@ -4,9 +4,9 @@
     z-index: 100;
     
     .hamburger-btn{
-        height: 30px;
-        width: 40px;
-        overflow-x: visible;
+        height: 40px;
+        width: 50px;
+        overflow: visible!important;
         @include d-column-center;
         
         &:hover{
@@ -40,8 +40,8 @@
     }
 
     .hamburger-btn-clicked{
-        height: 30px;
-        width: 35px;
+        height: 40px;
+        width: 50px;
         @include d-column-center;
         
         span{

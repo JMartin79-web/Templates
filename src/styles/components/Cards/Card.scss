@@ -1,5 +1,5 @@
 .card{
-    margin: auto;
+    @include margin15;
     aspect-ratio: 3/4;
     width: 100%;
     max-width: 300px;
@@ -7,11 +7,11 @@
     .card-img{
         aspect-ratio: 1/1;
         background-color: $colorBg;
-        @include margin15;
+        @include margin10;
     }
 
     .card-txt{
-        @include margin15;
+        @include margin10;
 
     }
 }
