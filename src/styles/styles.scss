@@ -45,6 +45,7 @@ html{ font-size: 62.5% /* para que 1rem sean 10px */}
 @import './components/Cards/Card.scss';
 @import './components/Cards/CardSquare.scss';
 @import './components/Cards/CardTestimonial.scss';
+@import './components/Cards/CardTestimonial2.scss';
 
 // DIVISOR
 @import './components/Divisor/Divisor.scss';
@@ -60,14 +61,17 @@ html{ font-size: 62.5% /* para que 1rem sean 10px */}
 // HERO
 @import './components/Hero/Hero.scss';
 @import './components/Hero/Hero2.scss';
+@import './components/Hero/Hero3.scss';
 
 // ABOUT
 @import './components/About/About.scss';
 
 // CONTACT
 @import './components/Contact/Contact.scss';
+@import './components/Contact/Contact2.scss';
 
 
 // SECTION 2
 @import './components/Sections/Section2.scss';
 @import './components/Sections/TestimonialSection.scss';
+@import './components/Sections/Namelist.scss';
