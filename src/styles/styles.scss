@@ -43,9 +43,13 @@ html{ font-size: 62.5% /* para que 1rem sean 10px */}
 
 // CARDS
 @import './components/Cards/Card.scss';
+@import './components/Cards/CardContact.scss';
+@import './components/Cards/CardHorizontal.scss';
+@import './components/Cards/CardIcon.scss';
 @import './components/Cards/CardSquare.scss';
 @import './components/Cards/CardTestimonial.scss';
 @import './components/Cards/CardTestimonial2.scss';
+@import './components/Cards/ItemList.scss';
 
 // DIVISOR
 @import './components/Divisor/Divisor.scss';
@@ -65,13 +69,18 @@ html{ font-size: 62.5% /* para que 1rem sean 10px */}
 
 // ABOUT
 @import './components/About/About.scss';
+@import './components/About/About2.scss';
 
 // CONTACT
 @import './components/Contact/Contact.scss';
 @import './components/Contact/Contact2.scss';
 
 
-// SECTION 2
+// SECTIONS
 @import './components/Sections/Section2.scss';
 @import './components/Sections/TestimonialSection.scss';
+
 @import './components/Sections/Namelist.scss';
+@import './components/Sections/BigNameList.scss';
+
+@import './components/Sections/BigLocation.scss';

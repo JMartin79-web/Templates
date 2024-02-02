@@ -1,0 +1,52 @@
+.about-2-container{
+    @include container;
+    background-color: $secondary;
+    
+    .about-2{
+        @include div-width;
+        @include div-2col;
+        align-items: center;
+        .about-2-txt{
+            width: 100%;
+        }
+        
+        .about-2-img{
+            @include border-white;
+            @include shadow-glass;
+            @include d-flex-center;
+            @include disable-pointers-events;
+            width: 90%;
+            max-width: 500px;
+            aspect-ratio: 1/1;
+            border-top-left-radius: 7rem;
+            border-bottom-right-radius: 7rem;
+            overflow: hidden;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+
+
+}
+
+// TABLET
+@media screen and (max-width: 850px){
+    .about-2-container{
+        .about-2{
+            @include d-column;
+            .about-2-txt{ @include vertical-margin10; }
+            .about-2-img{ @include vertical-margin10; width: 100%; }
+    
+        }
+    }
+    
+}
+    
+// MOBILE
+@media screen and (max-width: 360px) {
+    
+    
+}

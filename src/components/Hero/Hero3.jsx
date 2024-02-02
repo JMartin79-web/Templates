@@ -2,7 +2,7 @@ import React from 'react'
 import { HashLink } from 'react-router-hash-link'
 
 
-import heroImg from './../../assets/img/hero/hero_bg.jpg'
+//import heroImg from './../../assets/img/hero/hero_bg.jpg'
 
 function Hero3() {
 return (
@@ -13,10 +13,10 @@ return (
 
         <div className='hero'>
             <section className='hero-txt'>
-                <h1>Tu mejor sonrisa</h1>
-                <h1>nuestro mayor desafío</h1>
+                <h1>Title h1</h1>
+                <h1>Second title h1</h1>
             
-                <p>Agendá tu cita hoy y dejanos ser la razón detrás de tu confianza y bienestar dental.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, ea, unde cupiditate asperiores</p>
                         
                 <div className='hero-txt-buttons'>
                     <HashLink smooth to={'/#nosotros'} className='secondary-button'>Saber más</HashLink>
@@ -29,7 +29,7 @@ return (
     </div>
         
     <div className='hero-bg'>
-       <img src={heroImg} alt="hero img" />
+       <img src='#' alt="hero img" />
    </div>
 
 </main>

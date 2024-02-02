@@ -1,0 +1,131 @@
+.big-name-list-container{
+    @include container;
+    background-color: $colorH;
+    .big-name-list{
+        @include div-width;
+
+        .title{
+            @include d-flex-center;
+            @include disable-selection;
+            .title-title{
+                h4{color: $white; text-align: center;} 
+                width: 75%;
+                max-width: 600px;
+                padding-right: 2rem;
+            }
+
+            .title-icon{
+                width: 25%;
+                margin-top: .5rem;
+                
+                .title-icon-div{
+                    width: 5rem;
+                    overflow: hidden;
+                    svg{
+                        @include d-flex-center;
+                        @include disable-selection; 
+                        fill: $secondary50;
+                        width: 5rem;
+                        rotate: 0deg;
+                        @include animation-transition;
+                        cursor: pointer;
+                        &:hover{
+                            fill: $white;
+                            @include animation-transition-fast;
+                        }
+                    }
+    
+    
+                }
+    
+                .title-icon-div-clicked{
+                    width: 5rem;
+                    overflow: hidden;
+                    svg{
+                        @include d-flex-center;
+                        @include disable-selection; 
+                        @include animation-transition-fast;
+                        fill: $secondary50;
+                        width: 5rem;
+                        rotate: 180deg;
+                        cursor: pointer;
+                        &:hover{
+                            fill: $white;
+                            @include animation-transition-fast;
+                        }
+        
+                    }
+                }
+            }
+        }
+
+        
+
+        .content{
+            @include d-column-center;
+            .content-hidden{
+                animation-name: content-hidden;
+                animation-duration: .3s;
+                max-height: 0;
+                height: 0;
+                opacity: 0;
+                display: block;
+                overflow: hidden;
+                @include div-3col;
+
+            }
+    
+            .content-show{
+                animation-name: content-show;
+                animation-duration: .3s;
+                padding: 15px;
+                overflow: hidden;
+                display: block;
+                @include div-3col;
+            }
+        }
+        
+
+
+
+
+    }
+}
+
+
+
+// TABLET
+@media screen and (max-width: 700px){
+    .big-name-list-container{
+        .big-name-list{
+            @include div-width;
+            .title{
+                .title-title{  
+                    h4{font-size: 3rem;} 
+                    
+                }
+
+            }
+    
+        }
+    }
+}
+    
+// MOBILE
+@media screen and (max-width: 400px) {
+    
+    .big-name-list-container{
+        .big-name-list{
+            @include div-width;
+            .title{
+                .title-title{  
+                    h4{font-size: 2.5rem;} 
+                    
+                }
+
+            }
+    
+        }
+    }
+
+}

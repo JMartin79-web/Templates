@@ -5,7 +5,7 @@
 
     .namelist{    
         @include d-column-center;
-        padding: 15px 0px;
+        @include padding50;
         h4{color: $white; text-align: center;}
         .namelist-list{
             width: 100%;
@@ -45,7 +45,9 @@
 // TABLET
 @media screen and (max-width: 768px){
     .namelist-container{
-        .namelist{    
+        .namelist{
+            @include vertical-padding25;
+
             .namelist-list{
                 .item{
                     @include margin5;
@@ -61,5 +63,8 @@
 // MOBILE
 @media screen and (max-width: 360px) {
     
-    
+.namelist-container{
+    .namelist{ @include vertical-padding15; }
+        
+}
 }

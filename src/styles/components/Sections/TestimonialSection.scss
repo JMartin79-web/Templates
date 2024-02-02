@@ -8,7 +8,7 @@
             @include vertical-margin15;
             display: flex;
             justify-content: space-evenly;
-            align-items: center;
+            align-items: stretch;
             flex-wrap: wrap;
         }
     }

@@ -60,6 +60,17 @@
     @media screen and (max-width: 360px){ @include padding15; }
 }
 
+@mixin div-3col {
+    width: 100%;
+    display: grid;
+    justify-items: flex-start;
+    grid-template-columns: repeat(3, 1fr);
+    @include vertical-margin10;
+    // TABLET
+    @media screen and (max-width: 575px){  grid-template-columns: repeat(2, 1fr);}
+    // MOBILE
+    @media screen and (max-width: 400px){  grid-template-columns: repeat(1, 1fr);}
+}
 
 // padding
 
@@ -92,6 +103,88 @@
 @mixin vertical-margin20{margin: 20px 0px;}
 @mixin vertical-margin25{margin: 25px 0px;}
 @mixin vertical-margin50{margin: 50px 0px;}
+
+
+// GLASS EFFECT
+
+@mixin glass {
+    background: rgb(255,255,255);
+    background: -moz-radial-gradient(circle, rgba(255,255,255,0.8547794117647058) 66%, rgba(253,254,255,0.5578606442577031) 99%);
+    background: -webkit-radial-gradient(circle, rgba(255,255,255,0.8547794117647058) 66%, rgba(253,254,255,0.5578606442577031) 99%);
+    background: radial-gradient(circle, rgba(255,255,255,0.8547794117647058) 66%, rgba(253,254,255,0.5578606442577031) 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#fdfeff",GradientType=1);
+    backdrop-filter: blur(3px);
+}
+
+@mixin glass-2 {
+    background: rgb(255,255,255);
+    background: -moz-radial-gradient(circle, rgba(255,255,255,0.6951155462184874) 0%, rgba(245,245,245,0.5018382352941176) 100%);
+    background: -webkit-radial-gradient(circle, rgba(255,255,255,0.6951155462184874) 0%, rgba(245,245,245,0.5018382352941176) 100%);
+    background: radial-gradient(circle, rgba(255,255,255,0.6951155462184874) 0%, rgba(245,245,245,0.5018382352941176) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f5f5f5",GradientType=1);
+    backdrop-filter: blur(3px);
+}
+
+@mixin glass-3 {
+    background: rgb(255,255,255);
+    background: -moz-radial-gradient(circle, rgba(255,255,255,0.4990371148459384) 0%, rgba(245,245,245,0.30015756302521013) 100%);
+    background: -webkit-radial-gradient(circle, rgba(255,255,255,0.4990371148459384) 0%, rgba(245,245,245,0.30015756302521013) 100%);
+    background: radial-gradient(circle, rgba(255,255,255,0.4990371148459384) 0%, rgba(245,245,245,0.30015756302521013) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f5f5f5",GradientType=1);
+    backdrop-filter: blur(3px);
+}
+
+@mixin glass-rosa {
+    background: rgb(255,255,255);
+    background: -moz-radial-gradient(circle, rgba(255,255,255,0.804359243697479) 22%, rgba(241,203,208,0.05085784313725494) 100%);
+    background: -webkit-radial-gradient(circle, rgba(255,255,255,0.804359243697479) 22%, rgba(241,203,208,0.05085784313725494) 100%);
+    background: radial-gradient(circle, rgba(255,255,255,0.804359243697479) 22%, rgba(241,203,208,0.05085784313725494) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f1cbd0",GradientType=1);
+    backdrop-filter: blur(3px);
+}
+
+@mixin glass-gris {
+    background: rgb(255,255,255);
+    background: -moz-radial-gradient(circle, rgba(255,255,255,0.5998774509803921) 47%, rgba(169,177,181,0.2553396358543417) 100%);
+    background: -webkit-radial-gradient(circle, rgba(255,255,255,0.5998774509803921) 47%, rgba(169,177,181,0.2553396358543417) 100%);
+    background: radial-gradient(circle, rgba(255,255,255,0.5998774509803921) 47%, rgba(169,177,181,0.2553396358543417) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#a9b1b5",GradientType=1);
+    backdrop-filter: blur(3px);
+}
+
+@mixin dashboard-glass{
+    background: rgb(255,255,255);
+    background: -moz-radial-gradient(circle, rgba(255,255,255,0.865983893557423) 31%, rgba(246,246,246,0.6166841736694677) 100%);
+    background: -webkit-radial-gradient(circle, rgba(255,255,255,0.865983893557423) 31%, rgba(246,246,246,0.6166841736694677) 100%);
+    background: radial-gradient(circle, rgba(255,255,255,0.865983893557423) 31%, rgba(246,246,246,0.6166841736694677) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f6f6f6",GradientType=1);
+    backdrop-filter: blur(3px);
+}
+
+
+// GRADIENT
+@mixin mesh-gradient{
+    background-color:hsla(240,0%,85%,1);
+    background-image:
+    radial-gradient(at 21% 6%, hsla(240,51%,53%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(229,17%,80%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(229,22%,52%,1) 0px, transparent 50%),
+    radial-gradient(at 72% 70%, hsla(242,100%,70%,1) 0px, transparent 50%);
+}
+
+// BORDERS
+@mixin border-white{ border: 2px solid $white; }
+
+
+// SHADOWS
+@mixin shadow-glass{ box-shadow:  3px 3px 7px $black50, -2px -2px 4px $white50; }
+@mixin shadow-glass-intern{ box-shadow: inset 3px 3px 7px $black50, inset -2px -2px 4px $white50; }
+@mixin shadow-dashboard{ box-shadow:  0px 0px 12px $black50, 0px 0px 4px $white50; }
+
+
+
+
+
 
 
 // ANIMATIONS

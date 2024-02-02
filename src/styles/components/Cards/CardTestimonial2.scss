@@ -5,25 +5,22 @@
     width: 100%;
     max-width: 300px;
 
-    aspect-ratio: 6/5;
-    
     padding: 2.1rem;
     border-radius: 2rem;
     background-color: $white;
     @include animation-transition;
     
-
-
-
     .card-img{
         @include d-column;
         h6{width: 75%; padding-left: 1rem}
         .card-img-div{
             display: flex;
             align-items: center;
+            h6{font-size: 2.5rem}
+
             .card-img-img{
                 @include animation-transition-fast;
-                border: solid .2rem $secondary;
+                border: solid .2rem $primary;
                 width: 25%;
                 border-radius: 10rem;
                 aspect-ratio: 1/1;

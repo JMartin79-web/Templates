@@ -10,7 +10,7 @@ return (
 <div className='contact-2-container' id='contacto'>
 
     <div className='contact-2'>
-        <h4>Nuestras sedes</h4>
+        <h4>Contact 2</h4>
         <br />
         <div className='contact-2-cards'>
             

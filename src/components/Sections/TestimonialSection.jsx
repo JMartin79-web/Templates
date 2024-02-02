@@ -1,9 +1,10 @@
 import React from 'react'
+
 import CardTestimonial from '../Cards/CardTestimonial'
 
 
 import user from './../../assets/img/testimonials/user.jpg'
-
+import CardTestimonial2 from '../Cards/CardTestimonial2'
 
 
 function TestimonialSection() {
@@ -31,7 +32,24 @@ return (
                 title='Title'
                 txt='"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia doloremque quos minima amet ratione."'
             />
-            
+
+            <CardTestimonial2
+                img={user}
+                title='Title'
+                txt='"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia doloremque quos minima amet ratione."'
+            />
+
+            <CardTestimonial2
+                img={user}
+                title='Title'
+                txt='"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia doloremque quos minima amet ratione."'
+            />   
+                     
+            <CardTestimonial2
+                img={user}
+                title='Title'
+                txt='"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia doloremque quos minima amet ratione."'
+            />
         </div>
     </div>
 

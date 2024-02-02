@@ -1,0 +1,57 @@
+.card-icon{
+    @include margin15;
+    @include border-white;
+    @include d-column-center;
+    @include animation-transition;
+
+    aspect-ratio: 1/1;
+    width: 100%;
+    max-width: 150px;
+
+    padding: 2rem;
+    border-radius: 2rem;
+
+    overflow: hidden;
+
+    .card-icon-img{
+        height: 75%;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        svg{
+            fill: $colorTxt;
+        }
+    }
+
+    .card-icon-txt{
+        height: 25%;
+        @include d-column-center;
+        h6{font-size: 1.8rem;overflow: hidden;}
+    }
+
+
+    &:hover{
+        background-color: $accent2;
+        margin-top: 1rem;
+        @include animation-transition-fast;
+        filter: drop-shadow($primary50 0px 1rem  .5rem);
+        .card-icon-img{
+            svg{
+                fill: $white;
+            }
+        }
+        .card-icon-txt{
+            h6{color: $white;}
+        }
+    }
+}
+
+
+// MOBILE
+@media screen and (max-width: 450px) {
+    
+    .card-icon{
+        @include margin5;
+    }
+
+    
+}

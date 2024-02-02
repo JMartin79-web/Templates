@@ -1,0 +1,65 @@
+.card-horizontal{
+    @include margin15;
+    @include glass-2;
+    @include border-white;
+    @include shadow-glass;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 95%;
+
+    border-radius: 2rem;
+
+    @include disable-selection;
+    .card-horizontal-img{
+        background-color: $secondary;
+        aspect-ratio: 1/1;
+        max-width: 75px;
+        border-radius: 5rem;
+        overflow: hidden;
+        width: 30%;
+        @include margin15;
+        @include padding5;
+        @include d-flex-center;
+        svg{
+            @include animation-transition;
+            fill: $colorTxt;
+        }
+    }
+
+    .card-horizontal-txt{
+        @include margin15;
+        width: 70%;
+        .card-horizontal-txt-title{
+            font-weight: $bold;
+        }
+        .card-horizontal-txt-txt{
+            font-weight: $semiBold;
+        }
+
+    }
+
+    &:hover{
+        .card-horizontal-img{
+            svg{
+                @include animation-transition-fast;
+                fill: $accent;
+            }
+        }
+    }
+}
+
+// TABLET
+@media screen and (max-width: 450px){
+    .card-horizontal{
+        @include margin5;
+        width: 85vw;
+        max-width: 350px;
+        min-width: 100px;
+    }
+}
+
+// MOBILE
+@media screen and (max-width: 360px) {
+
+}
